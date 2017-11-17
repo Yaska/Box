@@ -1,0 +1,52 @@
+{
+  "name": "box",
+  "version": "0.1.0",
+  "description": "My excellent module",
+  "license": "MIT",
+  "repository": "cyberpluto/box",
+  "author": {
+    "name": "Arek",
+    "email": "arek@yaska.eu",
+    "url": "https://yaska.eu"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "prettify": "prettier --write Box.jsx",
+    "test": "xo && ava",
+    "build": "babel Box.jsx --out-file Box.js"
+  },
+  "main": "Box.js",
+  "module": "Box.jsx",
+  "files": [
+    "Box.js",
+    "Box.jsx"
+  ],
+  "keywords": [
+    "react"
+  ],
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "prettier": "^1.8.2"
+  },
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "xo": "^0.18.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "tabWidth": 2,
+    "useTabs": true,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5",
+    "bracketSpacing": false,
+    "jsxBracketSameLine": false,
+    "parser": "babylon",
+    "requirePragma": false,
+    "insertPragma": false,
+    "proseWrap": true
+  }
+}
